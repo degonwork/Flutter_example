@@ -15,20 +15,19 @@ class RoundedIconBtn extends StatelessWidget {
       width: getProportionateScreenWidth(40),
       height: getProportionateScreenHeight(40),
       child: TextButton(
-        style: TextButton.styleFrom(
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(60),
+          style: TextButton.styleFrom(
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(60),
+            ),
+            primary: kPrimaryColor,
+            backgroundColor: Colors.white,
+            padding: EdgeInsets.zero,
           ),
-          primary: kPrimaryColor,
-          backgroundColor: Colors.white,
-          padding: EdgeInsets.zero,
-        ),
-        onPressed: press,
-        child: Icon(
-          iconData,
-          color: Colors.black,
-        ),
-      ),
+          onPressed: press,
+          child: Icon(
+            iconData,
+            color: Colors.black,
+          )),
     );
   }
 }
